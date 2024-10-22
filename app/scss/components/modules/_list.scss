@@ -1,0 +1,19 @@
+.m-list {
+    list-style-type: lower-latin;
+
+    &.-quiz {
+        display: inline-flex;
+        flex-direction: column;
+        padding-top: 20px;
+
+        & li {
+            @include first-of-type-none('margin-top', 10px);
+            cursor: pointer;
+            transition: color .4s, background-color .4s;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+}

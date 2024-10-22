@@ -1,0 +1,7 @@
+@mixin first-of-type-none($property, $value) {
+    #{$property}: $value;
+
+    &:first-of-type {
+        #{$property}: 0;
+    }    
+}
